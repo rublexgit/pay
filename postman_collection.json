@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "29083f3b-c648-4a91-a509-1cdef03e51aa",
+		"name": "Terminal Token",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29116403",
+		"_collection_link": "https://universal-water-960707.postman.co/workspace/My-Workspace~f0c3ab57-e9e1-4826-860b-ba3d2d8cce53/collection/29116403-29083f3b-c648-4a91-a509-1cdef03e51aa?action=share&source=collection_link&creator=29116403"
+	},
+	"item": [
+		{
+			"name": "Retrieve Terminal Information",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Token",
+						"value": "nkr0s6DTtKkyPnKjNzy9UfuVlRxIaAm0lRNvz4zd5YyNmgndDsknmD0SKpPL",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/terminals/v1/info",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"terminals",
+						"v1",
+						"info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Token",
+								"value": "MS3fOjoIQ5jiraIc7gtN9G5n4C72DlcpScQlK9UpmlN21lA06IjwWv6ghp9k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/terminals/v1/info",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"terminals",
+								"v1",
+								"info"
+							]
+						}
+					},
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":\"ERROR\",\"message\":\"Unauthenticated.\",\"data\":null}"
+				}
+			]
+		},
+		{
+			"name": "Get Complete List of System Currencies",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Token",
+						"value": "nkr0s6DTtKkyPnKjNzy9UfuVlRxIaAm0lRNvz4zd5YyNmgndDsknmD0SKpPL",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/terminals/v1/currencies",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"terminals",
+						"v1",
+						"currencies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Token",
+								"value": "MS3fOjoIQ5jiraIc7gtN9G5n4C72DlcpScQlK9UpmlN21lA06IjwWv6ghp9k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/terminals/v1/currencies",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"terminals",
+								"v1",
+								"currencies"
+							]
+						}
+					},
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":\"ERROR\",\"message\":\"Unauthenticated.\",\"data\":null}"
+				}
+			]
+		},
+		{
+			"name": "Get List of Supported Currencies by Personal Terminal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Token",
+						"value": "nkr0s6DTtKkyPnKjNzy9UfuVlRxIaAm0lRNvz4zd5YyNmgndDsknmD0SKpPL"
+					}
+				],
+				"url": {
+					"raw": "https://panel.pay.rublex.io/terminals/v1/currencies/supported",
+					"protocol": "https",
+					"host": [
+						"panel",
+						"pay",
+						"rublex",
+						"io"
+					],
+					"path": [
+						"terminals",
+						"v1",
+						"currencies",
+						"supported"
+					]
+				},
+				"description": "Get List of Supported Currencies by Personal Terminal"
+			},
+			"response": []
+		},
+		{
+			"name": "Payment Request (Invoice Creation) by Merchant",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Token",
+						"value": "4lshxDpRqUjQxrEUpJXtah9S26IpTClV4xJOjIXio44yNY63cOOhKqQpAVyN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 0.5,\r\n    \"currency_id\": 3,\r\n    \"callback_url\": \"https://example.test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/terminals/v1/pay-request",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"terminals",
+						"v1",
+						"pay-request"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Token",
+								"value": "MS3fOjoIQ5jiraIc7gtN9G5n4C72DlcpScQlK9UpmlN21lA06IjwWv6ghp9k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10,\r\n    \"currency_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/terminals/v1/pay-request",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"terminals",
+								"v1",
+								"pay-request"
+							]
+						}
+					},
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":\"ERROR\",\"message\":\"Unauthenticated.\",\"data\":null}"
+				}
+			]
+		},
+		{
+			"name": "Retrieve Invoice Status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Token",
+						"value": "4lshxDpRqUjQxrEUpJXtah9S26IpTClV4xJOjIXio44yNY63cOOhKqQpAVyN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/terminals/v1/invoices?invoice_number=X576KzjGFa76v05t29QOymRHOkoDH5Rj",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"terminals",
+						"v1",
+						"invoices"
+					],
+					"query": [
+						{
+							"key": "invoice_number",
+							"value": "X576KzjGFa76v05t29QOymRHOkoDH5Rj"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Token",
+								"value": "MS3fOjoIQ5jiraIc7gtN9G5n4C72DlcpScQlK9UpmlN21lA06IjwWv6ghp9k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/terminals/v1/invoices?invoice_number=szQJis52r0X3WGeQ2sLvooo3GPxpZxJw",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"terminals",
+								"v1",
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "invoice_number",
+									"value": "szQJis52r0X3WGeQ2sLvooo3GPxpZxJw"
+								}
+							]
+						}
+					},
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":\"ERROR\",\"message\":\"Unauthenticated.\",\"data\":null}"
+				}
+			]
+		},
+		{
+			"name": "Retrieve List of Financial Transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Token",
+						"value": "nkr0s6DTtKkyPnKjNzy9UfuVlRxIaAm0lRNvz4zd5YyNmgndDsknmD0SKpPL"
+					}
+				],
+				"url": {
+					"raw": "https://panel.pay.rublex.io/terminals/v1/pay-requests",
+					"protocol": "https",
+					"host": [
+						"panel",
+						"pay",
+						"rublex",
+						"io"
+					],
+					"path": [
+						"terminals",
+						"v1",
+						"pay-requests"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://panel.pay.rublex.io",
+			"type": "string"
+		}
+	]
+}

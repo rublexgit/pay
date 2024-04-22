@@ -170,7 +170,7 @@ Outputs:
   ]
 ```
 ```
-curl --location 'https://panel.pay.rublex.io/terminals/v1/transactions' \
+curl --location 'https://panel.pay.rublex.io/terminals/v1/pay-requests' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'Token: <Terminal Token>'
